@@ -1,0 +1,69 @@
+{
+  "effect":[
+    {
+      "function":"环保",
+      "facilitate":"无甲醛 大自然"
+    },
+    {
+      "function":"低价",
+      "facilitate":"低于购买价6折"
+    },
+    {
+      "function":"安全",
+      "facilitate":"专业清洁消毒处理"
+    },
+    {
+      "function":"省心",
+      "facilitate":"专业清洁消毒处理"
+    },
+    {
+      "function":"快捷",
+      "facilitate":"24小时内送货"
+    }
+  ],
+  "serive":[
+    {
+      "title" : "关于我们",
+      "about":"关于用户",
+      "sell":"注册协议",
+      "cooperation":"业务合作",
+      "statement":"免责声明",
+      "guarantee":"加入互里",
+      "protect":"隐藏保护"
+    },
+    {
+      "title" : "流程指南",
+      "about":"购买家具",
+      "sell":"出售家具",
+      "cooperation":"支付方式",
+      "statement":"配送安装",
+      "guarantee":"售后保障",
+      "protect":""
+    }
+  ],
+  "member":[
+    {
+      "title":"会员中心",
+      "plan":"会员计划",
+      "Integral":"积分规则",
+      "Complaint":"投诉建议"
+    }
+  ],
+  "contact":[
+    {
+      "title":"联系客服",
+      "tel":"电话:",
+      "number":"028-67635062",
+      "email":"邮箱:",
+      "address":"hello@hulihome.com"
+    }
+  ],
+  "follow":[
+    {
+      "WeChat":"新浪微博@户里网"
+    },
+    {
+      "WeChat":"关注微信 户里网"
+    }
+  ]
+}

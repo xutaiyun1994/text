@@ -1,0 +1,22 @@
+[
+  {
+    "title": "沙发&nbsp;&nbsp;&nbsp;SOFAS",
+    "navItem": ["单人位","双人位","三人位","休闲沙发","转角沙发"]
+  },
+  {
+    "title": "桌椅&nbsp;&nbsp;&nbsp;TABLES/CHAIRS",
+    "navItem": ["餐桌","餐椅","书桌","凳子","电脑桌","休闲椅","梳妆台","户外椅","其它"]
+  },
+  {
+    "title": "床&nbsp;&nbsp;&nbsp;BEDS",
+    "navItem": ["1.5米","1.8米","其它"]
+  },
+  {
+    "title": "柜&nbsp;&nbsp;&nbsp;STORAGE",
+    "navItem": ["衣柜","储物柜","书柜","电视柜","鞋柜","床头柜","其它"]
+  },
+  {
+    "title": "更多&nbsp;&nbsp;&nbsp;MORE",
+    "navItem": ["组合产品","日用家居","家居饰品","其它"]
+  }
+]

@@ -1,0 +1,786 @@
+@charset"UTF-8";
+/*
+功能：个人信息中心样式设置
+*/
+/*公共样式*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font: 16px "微软雅黑";
+    min-width: 1200px;
+}
+.clearFloat:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+/*样式详细设置*/
+.main_information{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/*header*/
+.information{
+    width: auto;
+    height: 296px;
+    background: #eee;
+}
+/*个人中心导航设置*/
+.content_information{
+    margin-bottom: 100px;
+}
+.pesnInfo_information{
+    width: 1190px;
+    padding: 25px;
+}
+.pesnInfo_information,.pesnInfo-choose{
+    margin-left: auto;
+    margin-right: auto;
+}
+.pesnInfo-choose{
+    width: 1190px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.pesnInfo-choose ul{
+    display: flex;
+}
+.pesnInfo-choose li{
+    position: relative;
+    width: auto;
+    margin-right: 30px;
+    margin-left: 26px;
+    line-height: 40px;
+}
+.pesnInfo-choose li a.checked {
+    border-bottom: 2px solid #de3d36;
+    color: #de3d36;
+}
+.pesnInfo-choose li a,.pesnInfo-choose li i{
+    display: block;
+}
+.pesnInfo-choose li a{
+    padding: 0 10px;
+    font-size: 20px;
+    color: #666;
+    border-bottom: 2px solid transparent;
+}
+.pesnInfo-choose li i{
+    position: absolute;
+    width: auto;
+    height: 16px;
+    min-width: 16px;
+    background-color: #de3d36;
+    padding: 2px;
+    line-height: 13px;
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+    right: -9px;
+    top: -8px;
+    text-align: center;
+}
+.pesnInfo-choose li a:hover{
+    border-bottom: 2px solid #de3d36;
+    color: #de3d36;
+}
+/*个人信息设置*/
+.pesnInfo-set{
+    width: 100%;
+    padding:30px 26px;
+}
+.pesnInfo-set > div{
+    margin-bottom: 10px;
+}
+.pesnInfo-set > div >label{
+    line-height: 40px;
+    font-size: 18px;
+    display: block;
+}
+.pesnInfo-set .Name{
+    width: 132px;
+}
+.pesnInfo-set input {
+    height: 38px;
+}
+input[type="text"]{
+    background-color: #fff;
+    border: 1px solid #cccbca;
+    outline: red;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #666;
+    transition: box-shadow .3s;
+}
+input[type="text"]:focus {
+    border: 1px solid #82c353;
+    box-shadow: 0 0 10px rgba(130, 195, 83, 0.6);
+}
+.pesnInfo-set .exSelect,.sexSelect{
+    display: inline-block;
+}
+.pesnInfo-set .sexSelect input[type='radio']{
+    display: none;
+}
+.pesnInfo-set .rdo-checked_custom,.rdo_custom{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    cursor: pointer;
+    background: url(../images/sprites_0.png)no-repeat;
+}
+.pesnInfo-set .rdo-checked_custom{
+    background-position: -444px -74px;
+}
+.pesnInfo-set .rdo_custom{
+    background-position: -444px -46px;
+}
+.pesnInfo-set .margin{
+    margin-left: 46px;
+}
+/*生日*/
+.pesnInfo-set .set-year,.set-year ul{
+    width: 130px;
+}
+.select_custom{
+    cursor: pointer;
+     width: auto;
+    min-width: 80px;
+    height: 34px;
+    border: 1px solid #bfbfbe;
+    position: relative;
+    padding-left: 6px;
+}
+.pesnInfo-set  .set-year>i{
+    background-position: 89px 0;
+}
+.pesnInfo-set .set-mooth>i,.pesnInfo-set .set-date>i{
+    background-position: 41px 0;
+}
+.select_custom i{
+    width: auto;
+    height: 34px;
+    background: url(../images/slt_0.png) 66px 0 no-repeat;
+    line-height: 34px;
+    text-align: center;
+    font-style: normal;
+    font-size: 15px;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 34px;
+    display: block;
+}
+.select_custom i{
+    display: block;
+}
+.select_custom{
+    margin-right: 15px;
+    display: inline-block;
+}
+.select_custom ul{
+    max-height: 256px;
+    background-color: #fff;
+    border: 1px solid #bfbfbe;
+     display: none;
+    float: left;
+    position: absolute;
+    left: -1px;
+    top: 33px;
+    z-index: 999;
+    overflow: auto;
+    border-top: none;
+}
+.select_custom ul li{
+    padding: 0 10px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.set-date,.set-date ul,
+.set-mooth,.set-mooth ul{
+    width: 80px;
+}
+.select_custom ul li:hover{
+    background-color: #82c353;
+    color: #fff;
+}
+.select_custom i:hover{
+ background-position: 89px -34px;
+}
+.pesnInfo-set .set-mooth>i:hover,
+.pesnInfo-set .set-date>i:hover{
+    background-position: 41px -34px;
+}
+.pesnInfo-set .fitmentStyle,
+.pesnInfo-set .eduDegree,
+.pesnInfo-set .industry{
+    width: 180px;
+}
+.pesnInfo-set .fitmentStyle i,
+.pesnInfo-set .eduDegree i,
+.pesnInfo-set .industry i{
+    background-position: 138px 0;
+}
+.pesnInfo-set .fitmentStyle i:hover,
+.pesnInfo-set .eduDegree i:hover,
+.pesnInfo-set .industry i:hover{
+    background-position: 138px -34px;
+}
+.pesnInfo-set .fitmentStyle ul,
+.pesnInfo-set .eduDegree ul,
+.pesnInfo-set .industry ul{
+    width: 180px;
+}
+.pesnInfo-set .region .select_custom{
+    width: 120px;
+}
+.pesnInfo-set .region .select_custom i,
+.pesnInfo-set .ml-10 i{
+    background-position: 80px 0;
+}
+.pesnInfo-set .region .select_custom i:hover,
+.pesnInfo-set .ml-10 i:hover{
+    background-position: 80px -34px;
+}
+.region,.select_custom{
+    display: inline-block;
+}
+.pesnInfo-set .region .select_custom ul{
+    width: 120px;
+
+}
+.pesnInfo-set .ml-10,.ml-10 ul{
+    width: 120px;
+}
+.pesnInfo-set .street{
+    width: 540px;
+    height: 38px;
+}
+.pesnInfo-set .btn_mt{
+    position: relative;
+    margin-top: 80px;
+}
+.pesnInfo_btn{
+    width: 400px;
+    height: 64px;
+    background-color: #838281;
+    border: none;
+    text-align: center;
+    font: normal 32px/64px "微软雅黑";
+    color: #fff;
+    cursor: not-allowed;
+    display: block;
+    position: relative;
+    right: -353px;
+    border-radius: 5px;
+    letter-spacing: 20px;
+}
+/*.pesnInfo-set{*/
+    /*display: none;*/
+/*}*/
+
+/*我的订单*/
+.base_table{
+    width: 1190px;
+    margin-top: 38px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+.base_table tr{
+    border-bottom: 1px solid #ccc;
+}
+.base_table th{
+    font: normal 18px/50px "微软雅黑";
+    text-align: left;
+    padding: 0 0 0 20px;
+}
+.base_table td,
+.sell_info .link-gray{
+    padding:10px;
+    text-align: left;
+    color: #888;
+}
+.base_table .img_thumbnail{
+    display: inline-block;
+    vertical-align: middle;
+}
+.base_table .img_thumbnail img{
+    width: 78px;
+    height: 52px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.base_table .img_thumbnail p {
+    width: 100px;
+    padding: 10px 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+.base_table .data_ctrlGroup{
+    width: 146px;
+}
+.base_table .data_ctrlGroup .bottom{
+    padding:5px;
+}
+.base_table .data_ctrlGroup .top{
+    padding:5px;
+    border-bottom: 1px solid #ccc;
+}
+.base_table .data_ctrlGroup a{
+    padding: 4px 10px;
+    cursor: pointer;
+}
+.base_table .data_ctrlGroup .gapLine_v {
+    width: 1px;
+    height: 14px;
+    border-right: 1px solid #ccc;
+    vertical-align: middle;
+}
+.link-gray:hover {
+    color: #008edc;
+    text-decoration: underline;
+}
+.link-gray.dele:hover,
+.link-gray.deleSell:hover {
+    color: #d8180f;
+}
+/*返回按钮*/
+.btn_return{
+    position: relative;
+}
+.order_info .btn-large{
+    margin-top: 50px;
+    width: 400px;
+    height: 64px;
+    background-color: #838281;
+    text-align: center;
+    font: normal 32px/64px "微软雅黑";
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left:300px;
+    letter-spacing: 20px;
+}
+.btn-large:hover,
+.btn-large_inline:hover {
+    background-color: #82c353;
+}
+.box_info{
+    display: none;
+}
+
+/*取消订单弹出框*/
+
+.maskLayer{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.popupBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 480px;
+    height: 280px;
+    background-color: #fff;
+    padding: 26px 68px 50px;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    box-shadow: 0 0 24px rgba(183, 184, 185, 0.8);
+    z-index: 9999;
+}
+.sureCancleThisOrder{
+    margin-right: 45px;
+}
+.popup-header {
+    font-size: 22px;
+    text-align: center;
+}
+.popup-header h1{
+    font-size: 100%;
+    font-weight: normal;
+}
+.popup-content {
+    font-size: 18px;
+    margin-top: 30px;
+}
+.popup-content p {
+    min-width: 320px;
+    line-height: 160%;
+    text-align: center;
+}
+
+.popupBox .cancel{
+    margin-top: 20px;
+}
+.popup-header .popup-h1 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.popup-footer{
+    text-align: center;
+    margin-top: 38px;
+}
+.popup-footer button {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+}
+button[type="button"], button[type="submit"],
+button[type="reset"], .bottomBtn-large {
+    background-color: #838281;
+    border: none;
+    outline: none;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.popup-footer button:hover {
+    background-color: #82c353;
+}
+.maskLayer{
+    display: none;
+}
+/*我的出售*/
+.reducPriceApply .toSell {
+    margin-left: 0;
+    margin-top: 20px;
+}
+.sell_info .toSell {
+    margin-left: 342px;
+    margin-top: -100px;
+}
+.ctrlBar-top .w-1190 {
+    width: 1190px;
+}
+.sell_info .ctrlBar-top,
+.grayBg{
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-large, .btn-large_inline {
+    width: 400px;
+    height: 64px;
+    background-color: #838281;
+    border-radius: 3px;
+    text-align: center;
+    font: normal 32px/64px "微软雅黑";
+    color: #fff;
+    display: block;
+}
+
+.sell_info .mt-24 {
+    margin-top: 24px;
+}
+.base_table .img_info img {
+    width: 78px;
+    height: 52px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+.base_table .img_thumbnail p {
+    width: 100px;
+    padding: 10px 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+.base_table .data_ctrlGroup a {
+    padding: 4px 10px;
+}
+/*操作须知*/
+.ctrlNeedKnow {
+    width: 1190px;
+    margin-top: 16px;
+    margin-bottom: 180px;
+}
+.ctrlNeedKnow p {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+}
+.sell_info tbody tr:last-child td .bottom a:nth-child(3),.sell_info tbody tr:last-child td .top a{
+    color: #e3e9ef;
+    cursor: not-allowed !important;
+}
+.sell_info{
+    display: none;
+}
+/*个人账户*/
+.accountBox{
+    width: 1190px;
+    background-color: #dededd;
+    padding: 20px;
+    margin-top: 38px;
+}
+.grayBg h1{
+    font-size: 22px;
+    font-weight: normal;
+}
+.accountBox .myScore{
+    padding: 50px 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 15px;
+    background-color: #fff;
+}
+.accountBox .myScore .scoreDisplay{
+    width: 240px;
+}
+.accountBox .myScore .scoreDisplay > p {
+    font: bold 18px/100% "微软雅黑";
+}
+.accountBox .myScore .scoreDisplay .scoreNum {
+    font-family: Arial;
+    font-size: 60px;
+}
+.accountBox .myScore .scoreExplain {
+    width: 526px;
+    height: 24px;
+    text-align: center;
+    color: #888;
+    margin-top: 54px;
+}
+.accountBox .myScore .gotoScoreRule {
+    width: 222px;
+    height: 24px;
+    margin-top: 54px;
+}
+.accountBox .myScore .gotoScoreRule p {
+    width: 100%;
+    color: #888;
+    text-align: right;
+}
+.link-blue{
+    color: #008edc;
+}
+.accountBox .scoreNum{
+    font-size: 60px;
+}
+.scoreExplain,.gotoScoreRule,.integral{
+    display: inline-block;
+}
+.accountBox .scoreExplain{
+    margin-left: 100px;
+}
+.link-blue:hover {
+    color: #d8180f;
+    text-decoration: underline;
+}
+.accountBox{
+    display: none;
+}
+
+/*系统消息*/
+.grayBg {
+    width: 1190px;
+    background-color: #dededd;
+    padding: 20px;
+    margin-top: 38px;
+}
+.grayBg h1 {
+    font-size: 22px;
+    color: #333;
+}
+.sysMesgBox .mesgList {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    overflow: hidden;
+}
+.sysMesgBox .mesgList .mesgItem {
+    height: auto;
+    margin-bottom: 14px;
+}
+.sysMesgBox .mesgList,
+.sysMesgBox .mesgList .mesgItem,
+.accountBox .myScore {
+    overflow: hidden;
+    position: relative;
+}
+.sysMesgBox .mesgContent {
+    width: 968px;
+    height: 100%;
+    background-color: #fff;
+}
+.sysMesgBox .mesgContent{
+    cursor: pointer;
+}
+.sysMesgBox .mesgContent{
+    position: relative;
+}
+.sysMesgBox .mesgContent .mesgTxt {
+    width: 723px;
+    height: 20px;
+    line-height: 140%;
+    padding: 34px 56px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-size: 14px;
+}
+.sysMesgBox .mesgContent .mesgDatetime {
+    display: inline-block;
+    width: 240px;
+    height: 20px;
+    padding: 34px 56px;
+    font-size: 14px;
+}
+.sysMesgBox .mesgSelect .selectors{
+    display: inline-block;
+    background: url(../images/sprites_0.png) no-repeat -444px -46px;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.sysMesgBox .mesgSelect i.selectored{
+    background-position: -444px -74px;
+}
+.sysMesgBox .mesgSelect{
+    position: absolute;
+    right: 101px;
+    top: 42%;
+}
+/*删除按钮*/
+.ctrlBar-bottom{
+    margin-top: 50px;
+    margin-left: 326px;
+}
+.ctrlBar-bottom .btt_m{
+    letter-spacing: 15px;
+}
+.box_sysMesgBox{
+    display: none;
+}
+/*降价申请*/
+.reducPriceApply .reducPrice_baseCtrl{
+    width: 1080px;
+}
+.grayBg .subTitle{
+    font-size: 20px;
+    color: #de3d36;
+    margin-left: 20px;
+}
+.grayBg .white-bg{
+    margin-top: 10px;
+}
+.reducPriceApply .caption{
+    position: relative;
+    top: -8px;
+    left: 20px;
+}
+.reducPrice_baseCtrl .reducInfo,
+.cancelSell_baseCtrl .cancelInfo {
+    width: 200px;
+    text-align: left;
+    margin-left: 180px;
+}
+.reducPrice_baseCtrl .reducInfo p,
+.cancelSell_baseCtrl .cancelInfo p {
+    line-height: 140%;
+    font-size: 15px;
+}
+.reducPrice_baseCtrl .reducInfo p > label{
+    width: 78px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.reducPrice_baseCtrl .reducCtrl {
+    width: 274px;
+    height: 63px;
+    margin-left: 180px;
+    margin-top: 0;
+}
+.reducPrice_baseCtrl .reducCtrl p {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 15px;
+    color: #de3d36;
+}
+.reducPrice_baseCtrl .reducCtrl p input[type='text'] {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    color: #de3d36;
+    padding: 4px;
+}
+.reducInfo,.reducCtrl{
+    display: inline-block;
+}
+.ctrlBar-bottom .subSellSet {
+    display: inline-block;
+    letter-spacing: 15px;
+}
+.btn_bottom button:first-child {
+    position: relative;
+    left: -213px;
+}
+.btn_bottom button:last-child{
+    position: relative;
+    left:-60px;
+}
+.reducPrice_baseCtrl .table_th{
+    position: relative;
+    left: 170px;
+}
+ .reducPrice_baseCtrl{
+    width:93% ;
+}
+.reducPriceApply .p-30{
+    padding: 1px 0 20px 0;
+    width: 100%;
+    background: #fff;
+}
+.reducPriceApply td{
+    padding:0;
+}
+.reducPriceApply .img_info{
+    padding:12px;
+}
+.reducPriceApply{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

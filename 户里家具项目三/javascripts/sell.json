@@ -1,0 +1,30 @@
+{
+  "tabItem":[
+    {
+       "img":"images/example_6.jpg",
+      "order":"订单号",
+      "price":"620",
+      "time":"2015-08-02",
+      "Delivery":"2015-08-03",
+      "commodity":"户里",
+      "state":"售卖中",
+      "Payment":"否",
+      "apply":"降价申请",
+      "del":"删除",
+      "cancel":"取消"
+    },
+    {
+       "img":"images/example_6.jpg",
+      "order":"订单号",
+      "price":"620",
+      "time":"2015-08-02",
+      "Delivery":"2015-08-03",
+      "commodity":"户里",
+      "state":"售卖中",
+      "Payment":"否",
+      "apply":"降价申请",
+      "del":"删除",
+      "cancel":"取消"
+    }
+  ]
+}

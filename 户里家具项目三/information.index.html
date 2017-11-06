@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息中心</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/information.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/public.css">
+</head>
+<body>
+<main class="main_information">
+    <!--头部-->
+    <header class="information">
+
+    </header>
+
+     <article class="content_information">
+    <!--个人信息查看及设置-->
+    <section class="pesnInfo_information">
+     <!--个人信息板块导航选择-->
+        <div class="pesnInfo-choose">
+            <ul>
+                <li>
+                    <a href="#" class="checked">个人信息</a>
+                </li>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+                <li>
+                    <a href="#">我的出售</a>
+                </li>
+                <li>
+                    <a href="#">个人账户</a>
+                </li>
+                <li>
+                    <a href="#">系统消息</a>
+                    <i class="system_news">0</i>
+                </li>
+            </ul>
+        </div>
+        <section>
+            <!--个人信息设置-->
+           <div class="pesnInfo-set boxs_information">
+        <div>
+            <label>联系人</label>
+            <input type="text" placeholder="姓名" class="Name">
+            <input type="text" placeholder="电话号码" class="tel">
+        </div>
+            <div>
+                <label>性别</label>
+                <p class="sexSelect">
+                    <input type="radio" value="0">
+                    <i class="rdo-checked_custom"></i>
+                    <label>男</label>
+                </p>
+                <p  class="sexSelect margin">
+                    <input type="radio" value="0">
+                    <i class="rdo_custom"></i>
+                    <label>女</label>
+                </p>
+            </div>
+            <div>
+                <label>生日</label>
+                <div class="select_custom set-year">
+                    <i title="2015">2015</i>
+                  <ul>
+                      <li>2015</li>
+                      <li>2016</li>
+                      <li>2017</li>
+                      <li>2018</li>
+                      <li>2019</li>
+                      <li>2020</li>
+                      <li>2021</li>
+                      <li>2022</li>
+                      <li>2023</li>
+                      <li>2024</li>
+                  </ul>
+                </div>
+                <div class="select_custom set-mooth">
+                    <i title="01">01</i>
+                    <ul>
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                        <li>05</li>
+                        <li>06</li>
+                        <li>07</li>
+                        <li>08</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                    </ul>
+                </div>
+                <div class="select_custom set-date">
+                    <i title="01">01</i>
+                    <ul>
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                        <li>06</li>
+                        <li>07</li>
+                        <li>08</li>
+                        <li>09</li>
+                        <li>10</li>
+                    </ul>
+                </div>
+            </div>
+            <!--家居偏好-->
+            <div>
+                <label>家居偏好</label>
+                <div class="select_custom fitmentStyle">
+                  <i title="现代简约">现代简约</i>
+                    <ul>
+                        <li title="现代简约">现代简约</li>
+                        <li title="恬淡田园">恬淡田园</li>
+                        <li title="现代中式">现代中式</li>
+                        <li title="东南亚风格">东南亚风格</li>
+                        <li title="欧式古典">欧式古典</li>
+                        <li title="地中海">地中海</li>
+                        <li title="美式乡村">美式乡村</li>
+                        <li title="时尚混搭">时尚混搭</li>
+                        <li title="其它">其它</li>
+                    </ul>
+                </div>
+            </div>
+            <!--教育程度-->
+            <div>
+                <label>教育程度</label>
+                <div class="select_custom eduDegree">
+                  <i title="初中">初中</i>
+                    <ul>
+                        <li>初中</li>
+                        <li>高中</li>
+                        <li>大专</li>
+                        <li>本科</li>
+                        <li>硕士</li>
+                        <li>博士</li>
+                        <li>其它</li>
+                    </ul>
+                </div>
+            </div>
+            <!--所在行业-->
+            <div>
+                <label>所在行业</label>
+                <div class="select_custom industry">
+                    <i title="机构组织">机构组织</i>
+                    <ul>
+                        <li>机构组织</li>
+                        <li>农林牧渔</li>
+                        <li>医药卫生</li>
+                        <li>建筑建材</li>
+                        <li>冶金矿产</li>
+                        <li>石油化工</li>
+                        <li>信息产业</li>
+                        <li>交通运输</li>
+                        <li>信息产业</li>
+                        <li>机械机电</li>
+                        <li>轻工食品</li>
+                        <li>服装纺织</li>
+                        <li>安全防护</li>
+                        <li>环保绿化</li>
+                        <li>其它</li>
+                    </ul>
+                </div>
+            </div>
+            <!--所在地区-->
+            <div class="region">
+              <label>所在地区</label>
+                <div class="select_custom">
+                    <i title="四川">四川</i>
+                    <ul>
+                        <li>四川</li>
+                        <li>北京</li>
+                        <li>上海</li>
+                        <li>深圳</li>
+                        <li>其他地区</li>
+                    </ul>
+                </div>
+            </div>
+            <!--成都市-->
+            <div class="select_custom ml-10">
+               <i title="成都市">成都市</i>
+                <ul>
+                    <li>成都市</li>
+                    <li>绵阳市</li>
+                    <li>自贡市</li>
+                    <li>攀枝花市</li>
+                    <li>泸州市</li>
+                    <li>其它市</li>
+                </ul>
+            </div>
+            <!--锦江区-->
+            <div class="select_custom ml-10">
+                <i title="锦江区">锦江区</i>
+                <ul>
+                    <li>锦江区</li>
+                    <li>金牛区</li>
+                    <li>武侯区</li>
+                    <li>青羊区</li>
+                    <li>高新区</li>
+                    <li>成华区</li>
+                    <li>双流县</li>
+                    <li>金堂县</li>
+                    <li>新津县</li>
+                    <li>大邑县</li>
+                    <li>蒲江县</li>
+                    <li>郫县</li>
+                    <li>其它</li>
+                </ul>
+            </div>
+            <!--三环以内-->
+            <div class="select_custom ml-10">
+               <i title="三环以内">三环以内</i>
+                <ul>
+                    <li>三环以内</li>
+                    <li>三环以外绕城以内</li>
+                    <li>绕城西</li>
+                    <li>绕城南</li>
+                    <li>绕城东</li>
+                    <li>绕城北</li>
+                </ul>
+            </div>
+            <div>
+                <input type="text" class="street mt-10" placeholder="街道门牌号">
+            </div>
+            <!--按钮-->
+            <div class="btn_mt">
+                <button type="button" class="pesnInfo_btn" disabled>提交</button>
+            </div>
+        </div>
+            <!--我的订单-->
+            <div class="boxs_information box_info">
+               <div class="order_info">
+                   <table class="base_table w-1080 mt-38 order_baseCtrl">
+                       <thead>
+                       <tr>
+                           <th>订单信息</th>
+                           <th>金额</th>
+                           <th>下单时间</th>
+                           <th>送货时间</th>
+                           <th>状态</th>
+                           <th>操作</th>
+                       </tr>
+                       </thead>
+                       <tbody class="tb_tbody">
+                      <!--json数据加载-->
+                       </tbody>
+                   </table>
+                   <!--返回按钮-->
+                   <div class="btn_return">
+                       <button type="button" class="btn-large mt-50 large_btn">返回</button>
+                   </div>
+               </div>
+            </div>
+            <!--我的出售-->
+            <div class="sell_info boxs_information">
+                <!--出售列表-->
+                <table class="base_table w-1190 mt-24 sellInfo_baseCtrl ">
+                    <thead>
+                    <tr>
+                        <th>订单信息</th>
+                        <th>售卖金额</th>
+                        <th>提交时间</th>
+                        <th>上架时间</th>
+                        <th>商品存储</th>
+                        <th>商品状态</th>
+                        <th>是否回款</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tb_tbody">
+                    <!--json数据加载-->
+                    </tbody>
+                </table>
+                <!--操作须知-->
+                <div class="ctrlNeedKnow">
+                    <p>操作须知：审核未通过的订单请查看系统消息修改重新上传；</p>
+                    <p>每个订单仅能使用一次降价申请功能，如有疑问请联系客服。</p>
+                </div>
+                <div class="ctrlBar-top w-1190">
+                    <button type="button" class="btn-large toSell toSell_btn">我要出售</button>
+                </div>
+            </div>
+            <!--个人账户-->
+            <div class="accountBox grayBg box_w boxs_information">
+                <h1>个人账户</h1>
+                <div class="myScore white-bg">
+                    <div class="scoreDisplay">
+                        <p>我的积分</p>
+                    </div>
+                    <div class="integral">
+                        <span class="scoreNum">200</span>
+                        <span>分</span>
+                    </div>
+                    <div class="scoreExplain">
+                        <p>您在户里网的任意消费都可获得积分，积分可直接抵扣商品金额</p>
+                    </div>
+                    <div class="gotoScoreRule">
+                        <p>
+                            <span>查看</span>
+                            <a href="#" class="link-blue">积分规则</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--系统消息-->
+            <div class="box_sysMesgBox boxs_information">
+            <div class="sysMesgBox grayBg">
+                <h1>系统消息</h1>
+                <!--消息列表-->
+                <div class="mesgList">
+                    <!--示例消息1-->
+                    <div class="mesgItem">
+                        <div class="mesgContent">
+                            <p class="mesgTxt">在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。
+                                在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                            <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                        </div>
+                        <div class="mesgSelect">
+                            <label>
+                                <i class="selectors"></i>
+                                <span>标记</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--示例消息2-->
+                    <div class="mesgItem">
+                        <div class="mesgContent">
+                            <p class="mesgTxt">在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。
+                                在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                            <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                        </div>
+                        <div class="mesgSelect">
+                            <label>
+                                <i class="selectors"></i>
+                                <span>标记</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--示例消息3-->
+                    <div class="mesgItem">
+                        <div class="mesgContent">
+                            <p class="mesgTxt">在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。
+                                在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                            <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                        </div>
+                        <div class="mesgSelect">
+                            <label>
+                                <i class="selectors"></i>
+                                <span>标记</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--示例消息4-->
+                    <div class="mesgItem">
+                        <div class="mesgContent">
+                            <p class="mesgTxt">在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。在户里网的任意消费都可以获得积分，
+                                积分可以直接抵扣商品金额。
+                                在户里网的任意消费都可以获得积分，积分可以直接抵扣商品金额。</p>
+                            <p class="mesgDatetime">2015-8-11 22:48:26</p>
+                        </div>
+                        <div class="mesgSelect">
+                            <label>
+                                <i class="selectors"></i>
+                                <span>标记</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="ctrlBar-top w-1190 ctrlBar-bottom">
+                    <button type="button" class="btn-large toSell btt_m">删除</button>
+                </div>
+            </div>
+
+            <!--降价申请-->
+            <div class="reducPriceApply">
+                <div class="ctrlBar-top w-1190">
+                    <button type="button" class="btn-large toSell price_btn">我要出售</button>
+                </div>
+                <div class="grayBg w-1150 mt-24">
+                    <h1 class="caption">
+                        <span>降价申请</span>
+                        <span class="subTitle">(订单号：1234567890)</span>
+                    </h1>
+                    <div class="p-30 pt-40 pb-50 mt-15 white-bg">
+                        <table class="base_table reducPrice_baseCtrl">
+                            <thead>
+                            <tr>
+                                <th>商品信息</th>
+                                <th class="table_th">价格信息</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="img_info">
+                                    <div class="img_thumbnail">
+                                        <img src="images/6.jpg">
+                                        <p>商品货号</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="reducInfo">
+                                        <p>
+                                            <label>售卖价格</label>
+                                            <span>￥1500.00</span>
+                                        </p>
+                                        <p>
+                                            <label>售卖佣金</label>
+                                            <span>40%</span>
+                                        </p>
+                                        <p>
+                                            <label>实际收入</label>
+                                            <span>￥900.00</span>
+                                        </p>
+                                    </div>
+                                    <div class="reducCtrl">
+                                        <p>
+                                            <label>修改价格</label>
+                                            <span>￥</span>
+                                            <input type="text" value="">
+                                        </p>
+                                        <p>
+                                            <label>实际收入</label>
+                                            <span>￥</span>
+                                            <span>600.00</span>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="img_info">
+                                    <div class="img_thumbnail">
+                                        <img src="images/6.jpg">
+                                        <p>商品货号</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="reducInfo">
+                                        <p>
+                                            <label>售卖价格</label>
+                                            <span>￥1500.00</span>
+                                        </p>
+                                        <p>
+                                            <label>售卖佣金</label>
+                                            <span>40%</span>
+                                        </p>
+                                        <p>
+                                            <label>实际收入</label>
+                                            <span>￥900.00</span>
+                                        </p>
+                                    </div>
+                                    <div class="reducCtrl">
+                                        <span>商品已下单</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="img_info">
+                                    <div class="img_thumbnail">
+                                        <img src="images/6.jpg">
+                                        <p>商品货号</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="reducInfo">
+                                        <p>
+                                            <label>售卖价格</label>
+                                            <span>￥1500.00</span>
+                                        </p>
+                                        <p>
+                                            <label>售卖佣金</label>
+                                            <span>40%</span>
+                                        </p>
+                                        <p>
+                                            <label>实际收入</label>
+                                            <span>￥900.00</span>
+                                        </p>
+                                    </div>
+                                    <div class="reducCtrl">
+                                        <span>商品已下单</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="ctrlBar-bottom mt-50 btn_bottom">
+                    <button type="button" class="btn-large_inline subSellSet button_bt">提交</button>
+                    <button type="button" class="btn-large_inline subSellSet subSellSet_btn">返回</button>
+                </div>
+            </div>
+        </section>
+       </section>
+     </article>
+</main>
+<!--取消订单弹出框-->
+<div class="maskLayer">
+    <!--js数据-->
+</div>
+<!--footer-->
+<footer>
+
+</footer>
+<script src="plugin/jquery.js"></script>
+<script type="text/javascript" src=" javascripts/main.js"></script>
+<script type="text/javascript" src=" javascripts/common.js"></script>
+</body>
+</html>

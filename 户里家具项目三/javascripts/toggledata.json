@@ -1,0 +1,10 @@
+{
+  "shopdetails":[
+    {"type":"三人位","degree":"九成新","costprice":"2558","integral":"6.8"}
+  ],
+  "max":["images/example_6.jpg","images/example_7.jpg","images/example_8.jpg",
+    "images/example_9.jpg","images/example_10.jpg"],
+  "min":["images/example_6_thumbnail.jpg","images/example_7_thumbnail.jpg",
+    "images/example_8_thumbnail.jpg",
+    "images/example_9_thumbnail.jpg","images/example_10_thumbnail.jpg"]
+}
